@@ -32,6 +32,7 @@ void loop()
   {
       pedestrianMode();
       pedestrianRequest = false;
+      Serial.println("Traffic mode");
   }
   else {
   	trafficMode();
@@ -45,7 +46,6 @@ void buttonPressed()
 
 void trafficMode()
 {
-  Serial.println("Traffic mode");
   digitalWrite(GREEN, HIGH);
 }
 
